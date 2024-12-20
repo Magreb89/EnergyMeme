@@ -9,51 +9,76 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
             background-color: #4caf50;
             color: white;
-            padding: 10px 20px;
             text-align: center;
+            padding: 20px 10px;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 10px 0;
         }
         section {
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 10px auto;
-            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        footer {
+        section img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
             background-color: #4caf50;
             color: white;
-            text-align: center;
-            padding: 10px 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .roadmap, .tokenomics, .contact {
-            background-color: #e8f5e9;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-        h1, h2 {
-            color: #2e7d32;
-        }
-        a {
-            color: #1e88e5;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        .roadmap, .tokenomics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .roadmap div, .tokenomics div {
+            flex: 1 1 calc(50% - 20px);
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #e8f5e9;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="EnergyMeme Logo">
         <h1>EnergyMeme</h1>
         <p>Il Futuro dei Meme Coin Sostenibili 🌱</p>
     </header>
+
     <section>
         <h2>Chi Siamo</h2>
         <p>
@@ -62,36 +87,52 @@
             utili per il pianeta, con una community appassionata e un obiettivo chiaro: 
             costruire un futuro più verde e divertente!
         </p>
+        <img src="renewable-energy.jpg" alt="Energia Rinnovabile">
     </section>
+
     <section class="roadmap">
         <h2>Roadmap</h2>
-        <ul>
-            <li><strong>Q1 2024:</strong> Lancio del progetto e community building.</li>
-            <li><strong>Q2 2024:</strong> Airdrop iniziale e promozione sui social.</li>
-            <li><strong>Q3 2024:</strong> Collaborazioni con progetti di energia rinnovabile.</li>
-            <li><strong>Q4 2024:</strong> Lancio del marketplace EnergyMeme NFT eco-friendly.</li>
-        </ul>
+        <div>
+            <h3>Q1 2024</h3>
+            <p>Lancio del progetto e community building.</p>
+        </div>
+        <div>
+            <h3>Q2 2024</h3>
+            <p>Airdrop iniziale e promozione sui social.</p>
+        </div>
+        <div>
+            <h3>Q3 2024</h3>
+            <p>Collaborazioni con progetti di energia rinnovabile.</p>
+        </div>
+        <div>
+            <h3>Q4 2024</h3>
+            <p>Lancio del marketplace EnergyMeme NFT eco-friendly.</p>
+        </div>
     </section>
+
     <section class="tokenomics">
         <h2>Tokenomics</h2>
-        <p>
-            <strong>Distribuzione del Token:</strong>
-        </p>
-        <ul>
-            <li>50%: Community (Airdrop e premi).</li>
-            <li>30%: Riserve per la crescita.</li>
-            <li>20%: Marketing e sviluppo.</li>
-        </ul>
+        <div>
+            <h3>50%</h3>
+            <p>Community (Airdrop e premi)</p>
+        </div>
+        <div>
+            <h3>30%</h3>
+            <p>Riserve per la crescita</p>
+        </div>
+        <div>
+            <h3>20%</h3>
+            <p>Marketing e sviluppo</p>
+        </div>
     </section>
-    <section class="contact">
+
+    <section>
         <h2>Contatti</h2>
-        <p>Seguici sui nostri canali social:</p>
-        <ul>
-            <li><a href="https://x.com" target="_blank">Twitter/X</a></li>
-            <li><a href="https://t.me" target="_blank">Telegram</a></li>
-            <li>Email: <a href="mailto:info@energymeme.com">info@energymeme.com</a></li>
-        </ul>
+        <a href="https://x.com" class="button">Twitter/X</a>
+        <a href="https://t.me" class="button">Telegram</a>
+        <a href="mailto:info@energymeme.com" class="button">Email</a>
     </section>
+
     <footer>
         <p>© 2024 EnergyMeme. Tutti i diritti riservati.</p>
     </footer>
